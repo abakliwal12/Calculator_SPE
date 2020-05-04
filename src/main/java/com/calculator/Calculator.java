@@ -1,6 +1,7 @@
 package com.calculator;
 
         import java.io.*;
+        import java.util.Random;
         import java.util.Scanner;
 
 public class Calculator{
@@ -46,45 +47,38 @@ public class Calculator{
         /*System.out.println("2. SUBTRACTION");
         System.out.println("3. MULTIPLICATION");
         System.out.println("4. DIVISION");
-        System.out.println("5. MODULUS");
-        System.out.println("6. EXIT");
+        System.out.println("5. EXIT");
         System.out.println("Enter your choice");
         */
-        int a,b,f;
-        f=sc.nextInt();
-        System.out.println("choice = " + f);
-        c.choice = f;
+
+        Random r = new Random();
+        int start = 1;
+        int end = 1;
+        int result = r.nextInt(end-start) + start;
+        System.out.println("choice = " + result);
+        c.choice = result;
         System.out.println(c.choice);
         switch(c.choice){
             case 1 :
                 System.out.println("Add");
-                System.out.println("Enter two numbers :");
-                a=sc.nextInt();
-                b=sc.nextInt();
-                c.num1 = a;
-                c.num2 = b;
+                c.num1 = 10;
+                c.num2 = 20;
                 int add_sol = c.add(c.num1,c.num2);
-                System.out.println(" Addition Result = " + add_sol);
+                System.out.println(" Add Result = " + add_sol);
                 break;
 
             /*case 2 :
                 System.out.println("Subtract");
-                System.out.println("Enter two numbers :");
-                a=sc.nextInt();
-                b=sc.nextInt();
-                c.num1 = a;
-                c.num2 = b;
+                c.num1 = 20;
+                c.num2 = 10;
                 int sub_sol = c.subtract(c.num1,c.num2);
-                System.out.println(" Subtraction Result = " + sub_sol);
+                System.out.println(" Subtract Result = " + sub_sol);
                 break;
 
             case 3 :
                 System.out.println("Multiply");
-                System.out.println("Enter two numbers :");
-                a=sc.nextInt();
-                b=sc.nextInt();
-                c.num1 = a;
-                c.num2 = b;
+                c.num1 = 10;
+                c.num2 = 10;
                 int mul_sol = c.multiply(c.num1,c.num2);
                 System.out.println("Multiplication Result = " + mul_sol);
                 break;
@@ -92,29 +86,13 @@ public class Calculator{
             case 4 :
 
                 System.out.println("Divide");
-                System.out.println("Enter two numbers :");
-                a=sc.nextInt();
-                b=sc.nextInt();
-                c.num1 = a;
-                c.num2 = b;
+                c.num1 = 20;
+                c.num2 = 10;
                 int div_sol = c.divide(c.num1,c.num2);
                 System.out.println("Division Result = " + div_sol);
                 break;
 
-
             case 5 :
-                System.out.println("Modulus");
-                System.out.println("Enter two numbers :");
-                a=sc.nextInt();
-                b=sc.nextInt();
-                c.num1 = a;
-                c.num2 = b;
-                int mod_sol = c.modulus(c.num1,c.num2);
-                System.out.println("Modulus Result = " + mod_sol);
-                break;
-
-
-            case 6 :
                 System.exit(0);
                 break;
 */
