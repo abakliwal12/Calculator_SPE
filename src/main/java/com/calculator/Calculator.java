@@ -1,12 +1,9 @@
 package com.calculator;
-
-        import java.io.*;
-        import java.util.Random;
-        import java.util.Scanner;
+import java.io.*;
+import java.util.Random;
 
 public class Calculator{
     int num1, num2, result ;
-    char ch ;
     int choice;
 
     public int add(int num1,int num2) throws IOException{
@@ -17,8 +14,8 @@ public class Calculator{
     /*public int subtract(int num1,int num2) throws IOException{
         result = num1-num2 ;
         return result;
-    }
-
+    }*/
+/*
     public int multiply(int num1,int num2) throws IOException{
         result = num1*num2 ;
         return result;
@@ -41,7 +38,6 @@ public class Calculator{
 */
     public static void main(String args[]) throws  Exception{
         Calculator c = new Calculator();
-        Scanner sc = new Scanner(System.in);
         System.out.println("----------------------------Calculator---------------------------------");
         System.out.println("1. ADDITION");
         /*System.out.println("2. SUBTRACTION");
@@ -53,7 +49,7 @@ public class Calculator{
 
         Random r = new Random();
         int start = 1;
-        int end = 1;
+        int end = 6;
         int result = r.nextInt(end-start) + start;
         System.out.println("choice = " + result);
         c.choice = result;
@@ -74,8 +70,8 @@ public class Calculator{
                 int sub_sol = c.subtract(c.num1,c.num2);
                 System.out.println(" Subtract Result = " + sub_sol);
                 break;
-
-            case 3 :
+*/
+            /* case 3 :
                 System.out.println("Multiply");
                 c.num1 = 10;
                 c.num2 = 10;
