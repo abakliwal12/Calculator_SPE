@@ -49,7 +49,7 @@ public class Calculator{
 
         Random r = new Random();
         int start = 1;
-        int end = 6;
+        int end = 5;
         int result = r.nextInt(end-start) + start;
         System.out.println("choice = " + result);
         c.choice = result;
