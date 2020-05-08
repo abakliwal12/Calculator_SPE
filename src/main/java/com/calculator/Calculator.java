@@ -15,12 +15,12 @@ public class Calculator{
         result = num1-num2 ;
         return result;
     }
-/*
+
     public int multiply(int num1,int num2) throws IOException{
         result = num1*num2 ;
         return result;
     }
-
+/*
     public int divide(int num1, int num2) throws IOException{
         if(num2!=0) {
             result = num1 / num2;
@@ -65,7 +65,7 @@ public class Calculator{
                 System.out.println(" Subtract Result = " + sub_sol);
                 break;
 
-            /* case 3 :
+             case 3 :
                 System.out.println("Multiply");
                 c.num1 = 10;
                 c.num2 = 10;
@@ -73,7 +73,7 @@ public class Calculator{
                 System.out.println("Multiplication Result = " + mul_sol);
                 break;
 
-            case 4 :
+            /*case 4 :
 
                 System.out.println("Divide");
                 c.num1 = 20;
