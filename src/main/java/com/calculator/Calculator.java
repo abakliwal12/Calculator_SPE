@@ -20,7 +20,7 @@ public class Calculator{
         result = num1*num2 ;
         return result;
     }
-/*
+
     public int divide(int num1, int num2) throws IOException{
         if(num2!=0) {
             result = num1 / num2;
@@ -29,7 +29,7 @@ public class Calculator{
         }
         return result;
     }
-*/
+
 
     public static void main(String[] args) throws  Exception{
         Calculator c = new Calculator();
@@ -73,7 +73,7 @@ public class Calculator{
                 System.out.println("Multiplication Result = " + mul_sol);
                 break;
 
-            /*case 4 :
+            case 4 :
 
                 System.out.println("Divide");
                 c.num1 = 20;
@@ -85,7 +85,7 @@ public class Calculator{
             case 5 :
                 System.exit(0);
                 break;
-*/
+
             default :
                 System.out.println("INVALID CHOICE!!");
                 break;
