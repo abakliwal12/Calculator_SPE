@@ -3,25 +3,26 @@ import java.io.*;
 import java.util.Random;
 
 public class Calculator{
-    int num1, num2, result ;
+    double num1, num2;
+    double result;
     int choice;
 
-    public int add(int num1,int num2) throws IOException{
+    public double add(double num1,double num2) throws IOException{
         result = num1+num2 ;
         return result;
     }
 
-    public int subtract(int num1,int num2) throws IOException{
+    public double subtract(double num1,double num2) throws IOException{
         result = num1-num2 ;
         return result;
     }
 
-    public int multiply(int num1,int num2) throws IOException{
+    public double multiply(double num1,double num2) throws IOException{
         result = num1*num2 ;
         return result;
     }
 
-    public int divide(int num1, int num2) throws IOException{
+    public double divide(double num1, double num2) throws IOException{
         if(num2!=0) {
             result = num1 / num2;
         }else{
@@ -53,7 +54,7 @@ public class Calculator{
                 System.out.println("Add");
                 c.num1 = 10;
                 c.num2 = 20;
-                int add_sol = c.add(c.num1,c.num2);
+                double add_sol = c.add(c.num1,c.num2);
                 System.out.println(" Add Result = " + add_sol);
                 break;
 
@@ -61,7 +62,7 @@ public class Calculator{
                 System.out.println("Subtract");
                 c.num1 = 20;
                 c.num2 = 10;
-                int sub_sol = c.subtract(c.num1,c.num2);
+                double sub_sol = c.subtract(c.num1,c.num2);
                 System.out.println(" Subtract Result = " + sub_sol);
                 break;
 
@@ -69,7 +70,7 @@ public class Calculator{
                 System.out.println("Multiply");
                 c.num1 = 10;
                 c.num2 = 10;
-                int mul_sol = c.multiply(c.num1,c.num2);
+                double mul_sol = c.multiply(c.num1,c.num2);
                 System.out.println("Multiplication Result = " + mul_sol);
                 break;
 
@@ -78,7 +79,7 @@ public class Calculator{
                 System.out.println("Divide");
                 c.num1 = 20;
                 c.num2 = 10;
-                int div_sol = c.divide(c.num1,c.num2);
+                double div_sol = c.divide(c.num1,c.num2);
                 System.out.println("Division Result = " + div_sol);
                 break;
 
